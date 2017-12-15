@@ -1,0 +1,2 @@
+rootProject.name = 'play-ground'
+include "play-ground-web", "play-ground-domain"
