@@ -5,9 +5,9 @@ import CalendarFooter from './CalendarFooter';
 class Calendar extends React.Component {
   render(){
     return (
-      <div id="here">
+      <div id="this">
         <CalendarHeader />
-        <h1>Hello React Skeleton</h1>
+        <h1>space for calendar</h1>
         <CalendarFooter />
       </div>
     );
