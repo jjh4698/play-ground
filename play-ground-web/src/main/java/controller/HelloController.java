@@ -12,4 +12,9 @@ public class HelloController {
 	public String hello() {
 		return "hello";
 	}
+
+	@RequestMapping(value = "/calendar")
+	public String index() {
+		return "/calendar/calendar";
+	}
 }

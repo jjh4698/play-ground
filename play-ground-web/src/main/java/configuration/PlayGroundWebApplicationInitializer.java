@@ -23,6 +23,7 @@ public class PlayGroundWebApplicationInitializer implements WebApplicationInitia
 
 		AnnotationConfigWebApplicationContext servletAppContext = new AnnotationConfigWebApplicationContext();
 		servletAppContext.register(WebConfig.class);
+		servletAppContext.register(StaticResourceConfig.class);
 
 		DispatcherServlet dispatcherServlet = new DispatcherServlet(servletAppContext);
 
