@@ -1,0 +1,15 @@
+.cp-header {
+  width: 100%;
+  height: 100px;
+  background-color: #2a3b59;
+  position:relative;
+  display: inline-block;
+  padding-left: 100px;
+  padding-bottom: 15px;
+  top:0;
+}
+
+.cp-brand {
+  display: inline-block;
+  color: #FFFFFF;
+}
