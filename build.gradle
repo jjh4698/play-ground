@@ -40,6 +40,13 @@ allprojects {
         compile 'org.springframework:spring-tx:4.3.9.RELEASE'
         compile 'org.springframework:spring-jdbc:3.1.4.RELEASE'
         compile 'org.projectlombok:lombok:1.16.18'
+
+        compile 'org.springframework:spring-context:4.3.7.RELEASE'
+        compile 'org.hibernate:hibernate-core:5.2.10.Final'
+        compile 'javax.persistence:persistence-api:1.0'
+        compile 'org.springframework.data:spring-data-jpa:1.7.0.RELEASE'
+
+        compile 'org.modelmapper:modelmapper:0.7.8'
     }
 
 }

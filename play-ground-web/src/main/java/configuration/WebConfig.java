@@ -1,6 +1,7 @@
 package configuration;
 
 import com.github.jknack.handlebars.springmvc.HandlebarsViewResolver;
+import com.playground.domain.configuration.RootApplicationContextConfig;
 import controller.Controller;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
