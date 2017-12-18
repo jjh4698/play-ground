@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Calendar from './components/Calendar';
+import Calendar from './components/calendar/Calendar';
 
 
 const rootElement = document.getElementById('root');

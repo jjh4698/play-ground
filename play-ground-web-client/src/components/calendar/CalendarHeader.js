@@ -5,7 +5,7 @@ import React from 'react';
 import className from 'classnames/bind';
 import { Glyphicon } from 'react-bootstrap';
 
-const cx = className.bind(require('./CalendarHeader.css'));
+const cx = className.bind(require('./css/CalendarHeader.css'));
 
 class CalendarHeader extends React.Component {
   render(){
