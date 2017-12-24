@@ -7,3 +7,4 @@ lib/
 /.cache
 build/
 .gradle/
+.idea/workspace.xml
