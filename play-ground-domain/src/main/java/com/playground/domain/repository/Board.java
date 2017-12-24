@@ -23,6 +23,7 @@ public class Board {
 	@Temporal(value = TemporalType.TIMESTAMP)
 	@Column(name = "createdAt")
 	private Date createdAt;
+
 	@Temporal(value = TemporalType.TIMESTAMP)
 	@Column(name = "modifiedAt")
 	private Date modifiedAt;
