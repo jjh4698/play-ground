@@ -1,7 +1,6 @@
 package com.playground.domain.configuration;
 
 import org.apache.commons.dbcp2.BasicDataSource;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -36,7 +35,6 @@ public class RootApplicationContextConfig {
 	}
 
 	@Bean
-	@Autowired
 	public LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource dataSource) {
 		LocalContainerEntityManagerFactoryBean emf = new LocalContainerEntityManagerFactoryBean();
 		emf.setDataSource(dataSource);
@@ -48,8 +46,7 @@ public class RootApplicationContextConfig {
 
 	@Bean
 	@DependsOn(value = "entityManagerFactory")
-	@Autowired
-	public JpaTransactionManager transactionManager(EntityManagerFactory emf) {
-		return new JpaTransactionManager(emf);
+	public JpaTransactionManager transactionManager(EntityManagerFactory entityManagerFactory) {
+		return new JpaTransactionManager(entityManagerFactory);
 	}
 }
