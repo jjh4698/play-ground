@@ -21,11 +21,9 @@ public class Writing {
 	private String subject;
 	@Column(name = "content", nullable = true, updatable = true, columnDefinition = "글 내용")
 	private String content;
-	/**
-	 *  댓글을 DB 에 함께 저장할 것인지,
-	 *  join 할 것인지
-	 */
-	//	private List<Comment> commentList;
+	@ManyToOne
+	@JoinColumn(name = "board_id")
+	private Board board;
 	@Column(name = "createdAt")
 	@Temporal(value = TemporalType.TIMESTAMP)
 	private Date createdAt;

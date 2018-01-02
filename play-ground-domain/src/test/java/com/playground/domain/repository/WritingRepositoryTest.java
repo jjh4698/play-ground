@@ -25,6 +25,11 @@ public class WritingRepositoryTest {
 
 	@Test
 	public void test_CRUD() {
+
+		/**
+		 * 테스트를 하기 전에, Board 가 DB에 존재해야 한다.
+		 */
+
 		Writing writing = writingFixture();
 		repository.save(writing);
 
@@ -36,12 +41,20 @@ public class WritingRepositoryTest {
 
 	}
 
+	private Board boardFixture() {
+		Board board = new Board();
+		board.setBoardId(1);
+		return board;
+	}
+
 	private Writing writingFixture() {
 		Writing writing = new Writing();
 		writing.setContent("");
 		writing.setTitle("");
 		writing.setCreatedAt(new Date());
 		writing.setModifiedAt(new Date());
+		writing.setBoard(boardFixture());
+
 		return writing;
 	}
 }

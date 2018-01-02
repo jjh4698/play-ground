@@ -1,11 +1,14 @@
 package com.playground.domain.repository;
 
+import lombok.Data;
+
 import javax.persistence.*;
 import java.util.Date;
 
 /**
  * Created by coupang on 2017. 12. 24..
  */
+@Data
 @Entity
 @Table(name = "board")
 public class Board {

@@ -19,6 +19,9 @@ public class Comment {
 	private String content;
 	@Column(name = "fromWriting", columnDefinition = "댓글 대상에 해당하는 원본 글")
 	private String fromWriting;
+	@ManyToOne
+	@JoinColumn(name = "writingId")
+	private Writing writing;
 	@Temporal(value = TemporalType.TIMESTAMP)
 	@Column(name = "createdAt")
 	private Date createdAt;
